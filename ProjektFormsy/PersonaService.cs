@@ -15,10 +15,10 @@ namespace ProjektFormsy
 
         public bool EditPersona(CustomPersona persona)
         {
-            Persona p = personas.Find(p => p.GetID() == persona.GetID());
-            if (p is CustomPersona)
+            Persona found = personas.Find(p => p.GetID() == persona.GetID());
+            if (found is CustomPersona)
             {
-                personas.Insert(personas.IndexOf(p), persona);
+                personas.Insert(personas.IndexOf(found), persona);
                 return true;
             }
             return false;
@@ -26,8 +26,8 @@ namespace ProjektFormsy
 
         public bool DeletePersona(CustomPersona persona)
         {
-            Persona p = personas.Find(p => p.GetID() == persona.GetID());
-            if (p is CustomPersona)
+            Persona found = personas.Find(p => p.GetID() == persona.GetID());
+            if (found is CustomPersona)
             {
                 personas.Remove(persona);
                 return true;
