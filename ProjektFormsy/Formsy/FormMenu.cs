@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using FontAwesome.Sharp;
+using System.Media;
 
 namespace ProjektFormsy
 {
@@ -57,7 +58,7 @@ namespace ProjektFormsy
 
                 //Border przycisków po lewej
                 leftBorderBtn.BackColor = color;
-                leftBorderBtn.Location = new Point(0, currentBtn.Location.Y);
+                leftBorderBtn.Location = new Point(0, currentBtn.Location.Y+30);
                 leftBorderBtn.Visible = true;
                 leftBorderBtn.BringToFront();
 
@@ -104,28 +105,10 @@ namespace ProjektFormsy
             OpenChildForm(new Formsy.Create());
         }
 
-        private void EditButton_Click(object sender, EventArgs e)
-        {
-            ActivateButton(sender, RGBColors.color);
-            OpenChildForm(new Formsy.Edit());
-        }
-
-        private void RemoveButton_Click(object sender, EventArgs e)
-        {
-            ActivateButton(sender, RGBColors.color);
-            OpenChildForm(new Formsy.Remove());
-        }
-
         private void ListButton_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color);
             OpenChildForm(new Formsy.List());
-        }
-
-        private void SettingsButton_Click(object sender, EventArgs e)
-        {
-            ActivateButton(sender, RGBColors.color);
-            OpenChildForm(new Formsy.Settings());
         }
 
         private void HomeButton_Click(object sender, EventArgs e)
@@ -178,6 +161,12 @@ namespace ProjektFormsy
 
         private void FormMenu_Load(object sender, EventArgs e)
         {
+            OpenChildForm(new Formsy.Start());
+        }
+
+        private void AuthorButton_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color);
             OpenChildForm(new Formsy.Start());
         }
     }

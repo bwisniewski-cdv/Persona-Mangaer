@@ -122,10 +122,16 @@
 
 The program includes a demo list of several existing persona in the game.
 
-It will also allow you to create, edit, or delete a custom persona.
+It will also allow you to create, edit, or delete a custom persona. 
+You cannot remove or edit basic personas delivered by this program.
 
-Each persona has its own name, trait, one of the 23 available arcana and at least one default skill that it has from the beginning, up to a maximum of eight at a time.
+Each persona has its own name, trait, one of the 23 available arcana and five stats.
+In this demo you can use six basic trait due to limitation.
 
-If you want to go back to the main menu, click on the game logo in the upper left corner.</value>
+If you want to go back to the main menu, click on the game logo in the upper left corner.
+
+Important!
+If you want to see the changes in the list, click the "show list" button
+It is recommended to use this program in a 720P window</value>
   </data>
 </root>

@@ -30,10 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMenu));
             this.panelMenu = new System.Windows.Forms.Panel();
-            this.SettingsButton = new FontAwesome.Sharp.IconButton();
+            this.AuthorButton = new FontAwesome.Sharp.IconButton();
             this.ListButton = new FontAwesome.Sharp.IconButton();
-            this.RemoveButton = new FontAwesome.Sharp.IconButton();
-            this.EditButton = new FontAwesome.Sharp.IconButton();
             this.CreateButton = new FontAwesome.Sharp.IconButton();
             this.panelLogo = new System.Windows.Forms.Panel();
             this.HomeButton = new System.Windows.Forms.PictureBox();
@@ -55,10 +53,8 @@
             // panelMenu
             // 
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(0)))), ((int)(((byte)(2)))));
-            this.panelMenu.Controls.Add(this.SettingsButton);
+            this.panelMenu.Controls.Add(this.AuthorButton);
             this.panelMenu.Controls.Add(this.ListButton);
-            this.panelMenu.Controls.Add(this.RemoveButton);
-            this.panelMenu.Controls.Add(this.EditButton);
             this.panelMenu.Controls.Add(this.CreateButton);
             this.panelMenu.Controls.Add(this.panelLogo);
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
@@ -67,27 +63,27 @@
             this.panelMenu.Size = new System.Drawing.Size(220, 704);
             this.panelMenu.TabIndex = 0;
             // 
-            // SettingsButton
+            // AuthorButton
             // 
-            this.SettingsButton.Dock = System.Windows.Forms.DockStyle.Top;
-            this.SettingsButton.FlatAppearance.BorderSize = 0;
-            this.SettingsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.SettingsButton.Font = new System.Drawing.Font("Lato Black", 8.25F, System.Drawing.FontStyle.Bold);
-            this.SettingsButton.ForeColor = System.Drawing.Color.Gainsboro;
-            this.SettingsButton.IconChar = FontAwesome.Sharp.IconChar.Cogs;
-            this.SettingsButton.IconColor = System.Drawing.Color.White;
-            this.SettingsButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.SettingsButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.SettingsButton.Location = new System.Drawing.Point(0, 340);
-            this.SettingsButton.Name = "SettingsButton";
-            this.SettingsButton.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.SettingsButton.Size = new System.Drawing.Size(220, 60);
-            this.SettingsButton.TabIndex = 6;
-            this.SettingsButton.Text = "Settings";
-            this.SettingsButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.SettingsButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.SettingsButton.UseVisualStyleBackColor = true;
-            this.SettingsButton.Click += new System.EventHandler(this.SettingsButton_Click);
+            this.AuthorButton.Dock = System.Windows.Forms.DockStyle.Top;
+            this.AuthorButton.FlatAppearance.BorderSize = 0;
+            this.AuthorButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.AuthorButton.Font = new System.Drawing.Font("Lato Black", 8.25F, System.Drawing.FontStyle.Bold);
+            this.AuthorButton.ForeColor = System.Drawing.Color.Gainsboro;
+            this.AuthorButton.IconChar = FontAwesome.Sharp.IconChar.Atlas;
+            this.AuthorButton.IconColor = System.Drawing.Color.White;
+            this.AuthorButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.AuthorButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.AuthorButton.Location = new System.Drawing.Point(0, 340);
+            this.AuthorButton.Name = "AuthorButton";
+            this.AuthorButton.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.AuthorButton.Size = new System.Drawing.Size(220, 120);
+            this.AuthorButton.TabIndex = 6;
+            this.AuthorButton.Text = "Autor: Bartłomiej Wiśniewski";
+            this.AuthorButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.AuthorButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.AuthorButton.UseVisualStyleBackColor = true;
+            this.AuthorButton.Click += new System.EventHandler(this.AuthorButton_Click);
             // 
             // ListButton
             // 
@@ -100,60 +96,16 @@
             this.ListButton.IconColor = System.Drawing.Color.White;
             this.ListButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.ListButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ListButton.Location = new System.Drawing.Point(0, 280);
+            this.ListButton.Location = new System.Drawing.Point(0, 220);
             this.ListButton.Name = "ListButton";
             this.ListButton.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.ListButton.Size = new System.Drawing.Size(220, 60);
+            this.ListButton.Size = new System.Drawing.Size(220, 120);
             this.ListButton.TabIndex = 5;
             this.ListButton.Text = "View the current list of Persona\'s";
             this.ListButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.ListButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.ListButton.UseVisualStyleBackColor = true;
             this.ListButton.Click += new System.EventHandler(this.ListButton_Click);
-            // 
-            // RemoveButton
-            // 
-            this.RemoveButton.Dock = System.Windows.Forms.DockStyle.Top;
-            this.RemoveButton.FlatAppearance.BorderSize = 0;
-            this.RemoveButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.RemoveButton.Font = new System.Drawing.Font("Lato Black", 8.25F, System.Drawing.FontStyle.Bold);
-            this.RemoveButton.ForeColor = System.Drawing.Color.Gainsboro;
-            this.RemoveButton.IconChar = FontAwesome.Sharp.IconChar.TrashAlt;
-            this.RemoveButton.IconColor = System.Drawing.Color.White;
-            this.RemoveButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.RemoveButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.RemoveButton.Location = new System.Drawing.Point(0, 220);
-            this.RemoveButton.Name = "RemoveButton";
-            this.RemoveButton.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.RemoveButton.Size = new System.Drawing.Size(220, 60);
-            this.RemoveButton.TabIndex = 4;
-            this.RemoveButton.Text = "Remove Custom Persona";
-            this.RemoveButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.RemoveButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.RemoveButton.UseVisualStyleBackColor = true;
-            this.RemoveButton.Click += new System.EventHandler(this.RemoveButton_Click);
-            // 
-            // EditButton
-            // 
-            this.EditButton.Dock = System.Windows.Forms.DockStyle.Top;
-            this.EditButton.FlatAppearance.BorderSize = 0;
-            this.EditButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.EditButton.Font = new System.Drawing.Font("Lato Black", 8.25F, System.Drawing.FontStyle.Bold);
-            this.EditButton.ForeColor = System.Drawing.Color.Gainsboro;
-            this.EditButton.IconChar = FontAwesome.Sharp.IconChar.Edit;
-            this.EditButton.IconColor = System.Drawing.Color.White;
-            this.EditButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.EditButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.EditButton.Location = new System.Drawing.Point(0, 160);
-            this.EditButton.Name = "EditButton";
-            this.EditButton.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.EditButton.Size = new System.Drawing.Size(220, 60);
-            this.EditButton.TabIndex = 3;
-            this.EditButton.Text = "Edit Custom Persona";
-            this.EditButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.EditButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.EditButton.UseVisualStyleBackColor = true;
-            this.EditButton.Click += new System.EventHandler(this.EditButton_Click);
             // 
             // CreateButton
             // 
@@ -169,7 +121,7 @@
             this.CreateButton.Location = new System.Drawing.Point(0, 100);
             this.CreateButton.Name = "CreateButton";
             this.CreateButton.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.CreateButton.Size = new System.Drawing.Size(220, 60);
+            this.CreateButton.Size = new System.Drawing.Size(220, 120);
             this.CreateButton.TabIndex = 2;
             this.CreateButton.Text = "Create New Persona";
             this.CreateButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -189,7 +141,7 @@
             // HomeButton
             // 
             this.HomeButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.HomeButton.Image = global::ProjektFormsy.Properties.Resources.R_Logo1;
+            this.HomeButton.Image = global::ProjektFormsy.Properties.Resources.R_Logo;
             this.HomeButton.Location = new System.Drawing.Point(0, 0);
             this.HomeButton.Name = "HomeButton";
             this.HomeButton.Size = new System.Drawing.Size(220, 100);
@@ -343,10 +295,7 @@
         private System.Windows.Forms.Panel panelMenu;
         private System.Windows.Forms.Panel panelLogo;
         private FontAwesome.Sharp.IconButton ListButton;
-        private FontAwesome.Sharp.IconButton RemoveButton;
-        private FontAwesome.Sharp.IconButton EditButton;
         private FontAwesome.Sharp.IconButton CreateButton;
-        private FontAwesome.Sharp.IconButton SettingsButton;
         private System.Windows.Forms.PictureBox HomeButton;
         private System.Windows.Forms.Panel panelTitleBar;
         private System.Windows.Forms.Label HomeTextLabel;
@@ -356,6 +305,7 @@
         private FontAwesome.Sharp.IconButton MinimizeButton;
         private FontAwesome.Sharp.IconButton MaximizeButton;
         private FontAwesome.Sharp.IconButton ExitButton;
+        private FontAwesome.Sharp.IconButton AuthorButton;
     }
 }
 
