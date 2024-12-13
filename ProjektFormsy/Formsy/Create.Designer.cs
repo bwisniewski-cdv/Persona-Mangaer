@@ -57,7 +57,7 @@ namespace ProjektFormsy.Formsy
             // buttonCreate
             // 
             this.buttonCreate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonCreate.Location = new System.Drawing.Point(638, 392);
+            this.buttonCreate.Location = new System.Drawing.Point(866, 522);
             this.buttonCreate.Name = "buttonCreate";
             this.buttonCreate.Size = new System.Drawing.Size(150, 46);
             this.buttonCreate.TabIndex = 9;
@@ -67,6 +67,7 @@ namespace ProjektFormsy.Formsy
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
             this.groupBox1.Controls.Add(this.textLevel);
             this.groupBox1.Controls.Add(this.comboBoxTrait);
             this.groupBox1.Controls.Add(this.textName);
@@ -89,14 +90,10 @@ namespace ProjektFormsy.Formsy
             // 
             // comboBoxTrait
             // 
+            this.comboBoxTrait.AllowDrop = true;
+            this.comboBoxTrait.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxTrait.FormattingEnabled = true;
-            this.comboBoxTrait.Items.AddRange(new object[] {
-            "Fool",
-            "Magician",
-            "Lovers",
-            "Chariot",
-            "Death",
-            "Hermit"});
+            this.comboBoxTrait.Items.AddRange(new object[] { "Fool", "Magician", "Lovers", "Chariot", "Death", "Hermit" });
             this.comboBoxTrait.Location = new System.Drawing.Point(202, 65);
             this.comboBoxTrait.Name = "comboBoxTrait";
             this.comboBoxTrait.Size = new System.Drawing.Size(121, 21);
@@ -138,6 +135,7 @@ namespace ProjektFormsy.Formsy
             // 
             // groupBox2
             // 
+            this.groupBox2.BackColor = System.Drawing.Color.Transparent;
             this.groupBox2.Controls.Add(this.textBoxLuck);
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.textBoxAgility);
@@ -240,10 +238,13 @@ namespace ProjektFormsy.Formsy
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackgroundImage = global::ProjektFormsy.Properties.Resources.Protagonisci;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.ClientSize = new System.Drawing.Size(1028, 580);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.buttonCreate);
+            this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Create";
             this.Text = "Create";
@@ -252,7 +253,6 @@ namespace ProjektFormsy.Formsy
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
-
         }
 
         #endregion

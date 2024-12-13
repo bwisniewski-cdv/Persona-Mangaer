@@ -77,12 +77,6 @@
     <Compile Include="Formsy\List.Designer.cs">
       <DependentUpon>List.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formsy\Settings.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formsy\Settings.Designer.cs">
-      <DependentUpon>Settings.cs</DependentUpon>
-    </Compile>
     <Compile Include="Formsy\Start.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -104,9 +98,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formsy\List.resx">
       <DependentUpon>List.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formsy\Settings.resx">
-      <DependentUpon>Settings.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formsy\Start.resx">
       <DependentUpon>Start.cs</DependentUpon>

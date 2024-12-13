@@ -23,8 +23,8 @@
         #region Kod generowany przez Projektanta formularzy systemu Windows
 
         /// <summary>
-        /// Metoda wymagana do obsługi projektanta — nie należy modyfikować
-        /// jej zawartości w edytorze kodu.
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
@@ -79,7 +79,7 @@
             this.AuthorButton.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.AuthorButton.Size = new System.Drawing.Size(220, 120);
             this.AuthorButton.TabIndex = 6;
-            this.AuthorButton.Text = "Autor: Bartłomiej Wiśniewski";
+            this.AuthorButton.Text = "Author: Bartłomiej Wiśniewski";
             this.AuthorButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.AuthorButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.AuthorButton.UseVisualStyleBackColor = true;
@@ -141,7 +141,7 @@
             // HomeButton
             // 
             this.HomeButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.HomeButton.Image = global::ProjektFormsy.Properties.Resources.R_Logo;
+            this.HomeButton.Image = ((System.Drawing.Image)(resources.GetObject("HomeButton.Image")));
             this.HomeButton.Location = new System.Drawing.Point(0, 0);
             this.HomeButton.Name = "HomeButton";
             this.HomeButton.Size = new System.Drawing.Size(220, 100);
@@ -287,7 +287,6 @@
             this.panelTitleBar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CurrentIconChild)).EndInit();
             this.ResumeLayout(false);
-
         }
 
         #endregion

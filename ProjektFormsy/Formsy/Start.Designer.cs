@@ -74,10 +74,11 @@
             this.alphaBlendTextBox1.Location = new System.Drawing.Point(177, 144);
             this.alphaBlendTextBox1.Multiline = true;
             this.alphaBlendTextBox1.Name = "alphaBlendTextBox1";
-            this.alphaBlendTextBox1.Size = new System.Drawing.Size(675, 336);
+            this.alphaBlendTextBox1.Size = new System.Drawing.Size(675, 398);
             this.alphaBlendTextBox1.TabIndex = 7;
             this.alphaBlendTextBox1.Text = resources.GetString("alphaBlendTextBox1.Text");
             this.alphaBlendTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.alphaBlendTextBox1.TextChanged += new System.EventHandler(this.alphaBlendTextBox1_TextChanged);
             // 
             // Start
             // 

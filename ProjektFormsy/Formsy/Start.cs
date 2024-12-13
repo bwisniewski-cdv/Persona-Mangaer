@@ -15,7 +15,8 @@ namespace ProjektFormsy.Formsy
         public Start()
         {
             InitializeComponent();
-            
+            alphaBlendTextBox1.ReadOnly = true;
+
         }
 
 
@@ -23,6 +24,11 @@ namespace ProjektFormsy.Formsy
         private void WikiLink_Click(object sender, EventArgs e)
         {
                 System.Diagnostics.Process.Start("https://megamitensei.fandom.com/wiki/Persona_5_Royal");
+        }
+
+        private void alphaBlendTextBox1_TextChanged(object sender, EventArgs e)
+        {
+            
         }
     }
 }

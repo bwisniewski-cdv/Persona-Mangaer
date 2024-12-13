@@ -58,7 +58,7 @@ namespace ProjektFormsy.Formsy
             // buttonEdit
             // 
             this.buttonEdit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonEdit.Location = new System.Drawing.Point(638, 392);
+            this.buttonEdit.Location = new System.Drawing.Point(866, 522);
             this.buttonEdit.Name = "buttonEdit";
             this.buttonEdit.Size = new System.Drawing.Size(150, 46);
             this.buttonEdit.TabIndex = 14;
@@ -101,7 +101,7 @@ namespace ProjektFormsy.Formsy
             // BackButton
             // 
             this.BackButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.BackButton.Location = new System.Drawing.Point(11, 392);
+            this.BackButton.Location = new System.Drawing.Point(11, 522);
             this.BackButton.Name = "BackButton";
             this.BackButton.Size = new System.Drawing.Size(150, 46);
             this.BackButton.TabIndex = 15;
@@ -120,14 +120,9 @@ namespace ProjektFormsy.Formsy
             // 
             // comboBoxTrait
             // 
+            this.comboBoxTrait.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxTrait.FormattingEnabled = true;
-            this.comboBoxTrait.Items.AddRange(new object[] {
-            "Fool",
-            "Magician",
-            "Lovers",
-            "Chariot",
-            "Death",
-            "Hermit"});
+            this.comboBoxTrait.Items.AddRange(new object[] { "Fool", "Magician", "Lovers", "Chariot", "Death", "Hermit" });
             this.comboBoxTrait.Location = new System.Drawing.Point(202, 64);
             this.comboBoxTrait.Name = "comboBoxTrait";
             this.comboBoxTrait.Size = new System.Drawing.Size(121, 21);
@@ -135,6 +130,7 @@ namespace ProjektFormsy.Formsy
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
             this.groupBox1.Controls.Add(this.textLevel);
             this.groupBox1.Controls.Add(this.comboBoxTrait);
             this.groupBox1.Controls.Add(this.textName);
@@ -151,6 +147,7 @@ namespace ProjektFormsy.Formsy
             // 
             // groupBox2
             // 
+            this.groupBox2.BackColor = System.Drawing.Color.Transparent;
             this.groupBox2.Controls.Add(this.textBoxLuck);
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.textBoxAgility);
@@ -161,7 +158,7 @@ namespace ProjektFormsy.Formsy
             this.groupBox2.Controls.Add(this.textBoxMagic);
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.labelStrength);
-            this.groupBox2.Location = new System.Drawing.Point(12, 168);
+            this.groupBox2.Location = new System.Drawing.Point(11, 168);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(400, 200);
             this.groupBox2.TabIndex = 20;
@@ -253,11 +250,14 @@ namespace ProjektFormsy.Formsy
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackgroundImage = global::ProjektFormsy.Properties.Resources.Protagonisci;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.ClientSize = new System.Drawing.Size(1028, 580);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.BackButton);
             this.Controls.Add(this.buttonEdit);
+            this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Edit";
             this.Text = "Edit";
@@ -266,7 +266,6 @@ namespace ProjektFormsy.Formsy
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
-
         }
 
         #endregion
